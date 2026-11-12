@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for Local Mail Sorter, a desktop email organisation application.">
+  <title>Privacy Policy — Local Mail Sorter</title>
+  <style>
+    :root { color-scheme: light; --ink:#20252b; --muted:#626e79; --line:#e5e8ec; --paper:#fbfbfa; --accent:#315c52; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    main { width:min(820px, calc(100% - 40px)); margin:0 auto; padding:54px 0 64px; }
+    a { color:var(--accent); text-underline-offset:4px; }
+    .back { display:inline-block; margin-bottom:34px; font-size:.94rem; }
+    .eyebrow { color:var(--accent); font-size:.78rem; font-weight:700; letter-spacing:.13em; text-transform:uppercase; }
+    h1 { margin:10px 0 8px; font-size:clamp(2.2rem,6vw,3.3rem); line-height:1.08; letter-spacing:-.045em; }
+    .updated { margin:0 0 34px; color:var(--muted); font-size:.92rem; }
+    h2 { margin:34px 0 9px; font-size:1.22rem; line-height:1.3; }
+    p, li { color:#424d57; }
+    ul { padding-left:1.3rem; }
+    li { margin:6px 0; }
+    .notice { margin:24px 0; padding:17px 19px; border-left:3px solid var(--accent); background:#f0f4f1; }
+    footer { margin-top:48px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="index.html">← Local Mail Sorter</a>
+    <div class="eyebrow">Privacy</div>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: 12 November 2026</p>
+
+    <p>This Privacy Policy explains how Local Mail Sorter handles information when you use the desktop application. Local Mail Sorter is designed to run on the user's computer. It is not a hosted email service, and the application maintainer does not operate a central service that stores users' mailbox contents.</p>
+
+    <div class="notice">
+      <strong>In brief:</strong> The application accesses a Gmail account only after the account holder authorises it. Email information, application settings, classification history and learning feedback are stored in the application's local data files. In the standard configuration, AI processing is sent to an Ollama service running locally on the user's computer. If the user configures a different model endpoint or service, relevant email content may be sent to that endpoint.
+    </div>
+
+    <h2>1. Information the application accesses</h2>
+    <p>Depending on the features the user enables and the permissions granted, Local Mail Sorter may access or process:</p>
+    <ul>
+      <li>Email message identifiers, sender and recipient details, subject lines, dates, message snippets and message bodies.</li>
+      <li>Gmail labels and message state, such as read or unread status.</li>
+      <li>Information needed to organise messages, including applying or removing labels, archiving, changing read status and other actions explicitly initiated or configured by the user.</li>
+      <li>User-created categories, sender rules, application settings, classification results, corrections and confirmed learning examples.</li>
+      <li>OAuth authorization tokens and related account connection information needed to maintain the Gmail connection.</li>
+    </ul>
+    <p>The application does not need a user's Google password. Google handles sign-in and authorization through its OAuth process.</p>
+
+    <h2>2. Google Gmail API and permissions</h2>
+    <p>When a user connects Gmail, the application uses the Google Gmail API under the permissions shown on Google's OAuth consent screen. The application may request the Gmail modify permission to read messages and manage labels and message state. If a user invokes a feature requiring broader mailbox permissions, Google may display additional permissions on the consent screen.</p>
+    <p>Users should review the permissions displayed by Google before granting access. A user can revoke the application's access at any time through their Google Account security settings.</p>
+
+    <h2>3. How information is used</h2>
+    <p>Information accessed by the application is used to provide the features the user requests, including:</p>
+    <ul>
+      <li>Classifying email into the user's configured categories.</li>
+      <li>Applying user-selected labels and mailbox actions.</li>
+      <li>Showing email details, classification explanations and review suggestions in the desktop interface.</li>
+      <li>Using user-confirmed classifications and corrections as examples to improve future classifications for that user's local application.</li>
+      <li>Maintaining account connections, application settings and local classification history.</li>
+    </ul>
+    <p>User-confirmed classifications and corrections may be retained as learning examples in the local application database. An unconfirmed model prediction should not be treated as a user-confirmed correction.</p>
+
+    <h2>4. Local storage and AI processing</h2>
+    <p>The application stores its database, settings, classification history and OAuth token files in its local application folders. These files may contain email-related information and should be protected like the mailbox itself. Anyone with access to the computer account or those files may be able to access that information.</p>
+    <p>In the standard configuration, the application sends the text selected for classification to an Ollama model service running at a local address on the same computer. The application may send message subject, sender information, body text and relevant learning examples to that model service. Attachments are not necessarily processed; availability depends on the application's current features.</p>
+    <p>If the user changes the model endpoint, uses a network-hosted model service, or configures another external integration, the information sent to that service will be subject to that service's own privacy practices and configuration. The user is responsible for choosing and securing any non-local endpoint.</p>
+
+    <h2>5. Sharing and sale of information</h2>
+    <p>The application maintainer does not receive users' mailbox contents through a central Local Mail Sorter server, and does not sell email content or use it for advertising. Information is transmitted to Google as needed for Gmail authentication and API operations, and to the model endpoint or other service that the user configures.</p>
+    <p>This website is a simple information page. It does not provide an account portal or collect mailbox contents. The website host may process ordinary web request information under its own policies.</p>
+
+    <h2>6. Data retention and deletion</h2>
+    <p>Email-related records and learning examples may remain in the local application database until the user removes them or deletes the relevant local application data. Deleting local application data does not delete the original messages in Gmail. Gmail messages are changed or deleted only when the user invokes an application feature that performs that action.</p>
+    <p>To stop future Gmail access, revoke Local Mail Sorter's access in your Google Account. To remove locally stored application information, close the application and delete the relevant Local Mail Sorter data files after making any backup you need. Take care: deleting the database also removes local settings, history and learning examples.</p>
+
+    <h2>7. Security</h2>
+    <p>The application is intended for local use. Users are responsible for maintaining operating-system security, restricting access to their computer, protecting backups, and not sharing OAuth token files or database files. No method of electronic storage or transmission can be guaranteed to be completely secure.</p>
+
+    <h2>8. Children's privacy</h2>
+    <p>Local Mail Sorter is not designed specifically for children. A parent or guardian should supervise any use by a minor and should ensure that the account holder understands and authorises the Gmail permissions requested.</p>
+
+    <h2>9. Changes to this policy</h2>
+    <p>This policy may be updated when application features, integrations or data practices change. The “Last updated” date at the top indicates the date of the latest revision posted on this page.</p>
+
+    <h2>10. Contact</h2>
+    <p>For questions about this policy or Local Mail Sorter's handling of information, contact:</p>
+    <p><strong>Application contact:</strong> Ninad Bandewar<br>
+       <strong>Email:</strong> <a href="mailto:bandewar.ninad@gmail.com">bandewar.ninad@gmail.com</a></p>
+
+    <footer>
+      <p><a href="index.html">Local Mail Sorter homepage</a></p>
+    </footer>
+  </main>
+</body>
+</html>
